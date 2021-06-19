@@ -28,8 +28,8 @@ escreval("   voltado para apoio dos professores para com as aulas e os alunos.")
 escreval
 escreval("     *Solicitar Cadastro e armazenar dados de cadastro")
 escreval("     *Solicitar Login e validar mesmo")
-escreval("     *Solicitar notas e gerar Matriz com as notas de cada aluno")
-escreval("     *Solicitar matéria do dia e armazenar informações da matéria")
+escreval("     *Solicitar notas e gerar MÃ©dias com as notas bimestrais de cada aluno")
+escreval("     *Solicitar matÃ©ria do dia e armazenar informaÃ§Ãµes da matÃ©ria")
 escreval("     *Solicitar chamada e mostrar quantidade de faltas de cada aluno")
 escreval(" ")
 escreva("--> Pressione ENTER para continuar... ")
@@ -72,7 +72,7 @@ escreval()
 escreval("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *")
 escreval("*  ___________________________________________________________________________  *")
 escreval("* |                                                                           | *")
-escreval("* |                    VOCÊ SAIU DO REGISTRO DE CLASSE                        | *")
+escreval("* |                    VOCÃŠ SAIU DO REGISTRO DE CLASSE                        | *")
 escreval("* |___________________________________________________________________________| *")
 escreval("*                                                                               *")
 escreval("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *")
@@ -91,11 +91,11 @@ repita
    escreval("                             * [0] Sair        *        ")
    escreval("                             * * * * * * * * * *        ")
    escreval()
-   escreva("----> Escolhar umas das opções acima(1 , 2 ou 0): ")
+   escreva("----> Escolhar umas das opÃ§Ãµes acima(1 , 2 ou 0): ")
    leia(lc)
    escreval()
    se (lc<>1) e (lc<>2) e (lc<>0)entao
-      escreva("Valor inválido. Digite novamente!")
+      escreva("Valor invÃ¡lido. Digite novamente!")
       escreval()
    fimse
 ate (lc=1) ou (lc=2) ou (lc=0)
@@ -136,7 +136,7 @@ repita
    escreva("----> Confime Senha: ")
    leia(checksenha)
    se setpass[contp]<>checksenha entao
-      escreval("Senhas não conferem!!")
+      escreval("Senhas nÃ£o conferem!!")
    fimse
 ate setpass[contp]=checksenha
 escreval
@@ -219,7 +219,7 @@ escreval("                             * [2] ESCOLA 2    * ")
 escreval("                             * [0] Voltar      * ")
 escreval("                             * * * * * * * * * * ")
 escreval()
-escreval("                     Qual Colégio deseja atendimento: 1 , 2 ou 0.. ")
+escreval("                     Qual ColÃ©gio deseja atendimento: 1 , 2 ou 0.. ")
 escreval()
 leia(x)
 se x<>0 entao
@@ -250,14 +250,14 @@ procedimento menu_disc(VAR x:inteiro)
 inicio
 escreval()
 escreval("                         * * * * * * * * * * * * * * * ")
-escreval("                         * [1] MATÉRIA DO DIA        * ")
+escreval("                         * [1] MATÃ‰RIA DO DIA        * ")
 escreval("                         * [2] NOTAS                 * ")
-escreval("                         * [3] FREQUÊNCIA            * ")
-escreval("                         * [4] RELATÓRIOS            * ")
+escreval("                         * [3] FREQUÃŠNCIA            * ")
+escreval("                         * [4] RELATÃ“RIOS            * ")
 escreval("                         * [0] Voltar                * ")
 escreval("                         * * * * * * * * * * * * * * * ")
 escreval()
-escreval("                     Selecione a opção: 1 , 2 , 3 , 4 ou 0.. ")
+escreval("                     Selecione a opÃ§Ã£o: 1 , 2 , 3 , 4 ou 0.. ")
 escreval()
 leia(x)
 fimprocedimento
@@ -288,7 +288,7 @@ escreval("      |                                                     Voltar [0]
 escreval("      |-----------------------------------------------------------------|")
 escreval()
 escreval()
-escreval("        Selecione a aula que deseja postar matéria: 1 , 2 , 3 , 4 ou 0.. ")
+escreval("        Selecione a aula que deseja postar matÃ©ria: 1 , 2 , 3 , 4 ou 0.. ")
 leia(x)
 se x<>0 entao
    x:=1
@@ -311,7 +311,7 @@ escreva("Digite o nome do arquivo que deseja salvar: ")
 leia(arq)
 escreva("Digita a data de hoje: ")
 leia(data)
-escreva("Coloque o caminho que está o arquivo(C:\Users\Public\Documents): ")
+escreva("Coloque o caminho que estÃ¡ o arquivo(C:\Users\Public\Documents): ")
 leia(path)
 fimprocedimento
 //-----------------------------------Notas--------------------------------------
@@ -327,7 +327,7 @@ escreval("                   |-------------------------------------|            
 escreval()
 para x de 1 ate 4 faca
    repita
-      escreva("Digite a nota do ",x,"ºBI: ")
+      escreva("Digite a nota do ",x,"ÂºBI: ")
       leia(nts[x])
    ate (nts[x]>=0) e (nts[x]<=100)
 fimpara
@@ -397,12 +397,12 @@ inicio
 escreval()
 escreval("                    _____________________________________                        ")
 escreval("                   |                                     |                       ")
-escreval("                   |              RELATÓRIOS             |                       ")
+escreval("                   |              RELATÃ“RIOS             |                       ")
 escreval("                   |_____________________________________|                       ")
 escreval()
 escreval()
 repita
-   escreval("Deseja fazer relatório dos alunos individual ou da turma? ")
+   escreval("Deseja fazer relatÃ³rio dos alunos individual ou da turma? ")
    leia(rlt)
 ate (rlt="individual") ou (rlt="turma")
 se rlt="individual" entao
@@ -462,7 +462,7 @@ limpatela
 escreval()
 topo
 escreval()
-escreval("Digite o comentário a respeito do aluno: ")
+escreval("Digite o comentÃ¡rio a respeito do aluno: ")
 leia(c)
 fimprocedimento
 //--------------------------------RELAT TURMA-----------------------------------
